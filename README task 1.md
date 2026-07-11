@@ -11,8 +11,7 @@ This project performs a full data cleaning and EDA pipeline on the Kaggle **Hous
 - **Source**: [Kaggle - House Prices: Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)
 - **File used**: `train.csv`
 - **Target variable**: `SalePrice`
-
-> ⚠️ **Note:** `train.csv` is not included in this repo (large file). Download it from the Kaggle link above and place it in the project root before running the notebook.
+.
 
 ## 🛠️ Tech Stack
 
