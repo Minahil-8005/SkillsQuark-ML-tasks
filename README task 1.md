@@ -78,10 +78,4 @@ jupyter notebook
 - Clear understanding of feature relationships with `SalePrice`
 - Reusable data-cleaning pipeline for similar tabular datasets
 
-## 📝 Author
 
-Your Name Here
-
-## 📄 License
-
-This project is open source and available under the MIT License.
