@@ -1,16 +1,85 @@
-# SkillsQuark-ML-tasks
-# TASK 1
-EDA & Preprocessing
-##Description:
-This task involves the initial phase of the data science pipeline: Data Ingestion and Exploratory Structural Analysis. Using the pandas library, the goal is to load the raw historical housing dataset and inspect its dimensions, data types, and structural composition to prepare it for subsequent data cleaning and feature engineering steps.  
-# Key Steps Performed Data Loading: 
-Successfully loaded the training dataset (train.csv) into a Pandas DataFrame.  
+# Task 2: Building Supervised Models 🤖
 
-Shape Inspection: Verified the dataset contains 1,460 records (rows) and 81 features (columns). 
+Implementation and comparison of multiple **Supervised Learning** algorithms for a **classification** problem using **Scikit-Learn**.
 
-Data Type Profiling: Analyzed the attribute types using .info(), revealing a mix of integer (int64), floating-point (float64), and categorical (str/object) variables.  
+## 📋 Project Overview
 
-Missing Value Identification: Identified structural columns with significant missing values (e.g., Alley, PoolQC, Fence, MiscFeature) that require systematic handling. 
-# Technologies Used Python (Core Environment) 
-1.Pandas (Data Manipulation)  
-2.Matplotlib & Seaborn (Environment Setup for Visualization)  
+This project trains and compares 5 different classification algorithms on the **Breast Cancer Wisconsin Dataset** to predict whether a tumor is **Malignant** or **Benign**.
+
+## 🧠 Algorithms Compared
+
+1. Logistic Regression
+2. Decision Tree
+3. Support Vector Machine (SVM)
+4. K-Nearest Neighbors (KNN)
+5. Random Forest
+
+## 📊 Dataset
+
+- **Source**: `sklearn.datasets.load_breast_cancer` (built-in, 569 samples, 30 features)
+- **Target**: Binary classification (0 = Malignant, 1 = Benign)
+
+## 🛠️ Tech Stack
+
+- Python 3.10+
+- Scikit-Learn
+- Pandas / NumPy
+- Matplotlib / Seaborn
+- Jupyter Notebook
+
+## 📁 Project Structure
+
+```
+├── Task2_Supervised_Learning_Classification.ipynb   # Main notebook
+├── requirements.txt                                  # Python dependencies
+├── .gitignore
+└── README.md
+```
+
+## 🚀 How to Run
+
+1. Clone this repository
+```bash
+git clone <your-repo-url>
+cd <your-repo-name>
+```
+
+2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+3. Launch Jupyter Notebook
+```bash
+jupyter notebook
+```
+
+4. Open `Task2_Supervised_Learning_Classification.ipynb` and run all cells
+
+## 📈 Workflow
+
+1. **Data Loading & Exploration** — Load dataset, check for missing values, visualize class distribution
+2. **Preprocessing** — Train-test split (80/20) and feature scaling with `StandardScaler`
+3. **Model Training** — Train all 5 algorithms on the same data
+4. **Evaluation** — Compare Accuracy, Precision, Recall, F1-Score
+5. **Validation** — Confusion matrices + 5-fold Cross-Validation
+6. **Hyperparameter Tuning** — `GridSearchCV` for Random Forest and SVM
+7. **Feature Importance** — Identify top contributing features
+8. **ROC Curve & AUC** — Compare model discrimination ability
+9. **Model Saving** — Best model saved with `joblib` for reuse
+
+## ✅ Outcome
+
+Acquired professional industry skills in:
+- End-to-end supervised ML pipeline
+- Model comparison and evaluation
+- Hyperparameter optimization
+- Model persistence for deployment
+
+## 📝 Author
+
+Your Name Here
+
+## 📄 License
+
+This project is open source and available under the MIT License.
